@@ -1,11 +1,9 @@
-import javafx.scene.control.Label;
-
 public class Counter {
 
-    private final Label label;
+    private final AppLabel label;
     private int startingValue = 0;
 
-    public Counter(Label label) {
+    public Counter(AppLabel label) {
         this.label = label;
     }
 
