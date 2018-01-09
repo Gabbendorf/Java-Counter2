@@ -13,4 +13,8 @@ public class AppButton {
     public void setOnAction(EventHandler<ActionEvent> value) {
         button.setOnAction(value);
     }
+
+    public Button actualButton() {
+        return button;
+    }
 }
