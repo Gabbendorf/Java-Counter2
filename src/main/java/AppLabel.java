@@ -4,8 +4,8 @@ public class AppLabel {
 
     private final Label label;
 
-    public AppLabel(Label label) {
-        this.label = label;
+    public AppLabel() {
+        this.label = new Label();
     }
 
     public void setText(String text) {

@@ -1,14 +1,18 @@
 public class Counter {
 
     private final AppLabel label;
-    private int startingValue = 0;
+    private int value;
 
     public Counter(AppLabel label) {
         this.label = label;
     }
 
     public void updateValue() {
-        startingValue += 1;
-        label.setText(Integer.toString(startingValue));
+        value += 1;
+        label.setText(Integer.toString(value));
+    }
+
+    public int getValue() {
+        return value;
     }
 }
