@@ -8,6 +8,11 @@ public class AppButton {
 
     public AppButton(Button button) {
         this.button = button;
+        this.button.setText("+1");
+    }
+
+    public AppButton() {
+        this(new Button());
     }
 
     public void setOnAction(EventHandler<ActionEvent> value) {
