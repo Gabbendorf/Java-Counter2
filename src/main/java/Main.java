@@ -8,26 +8,26 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-       AppButton button = new AppButton();
+        AppButton button = new AppButton();
 
-       AppLabel label = new AppLabel();
-       label.actualLabel().setText("0");
+        AppLabel label = new AppLabel();
+        label.actualLabel().setText("0");
 
-       Counter counter = new Counter(label);
-       ActionSetter actionSetter = new ActionSetter(counter);
-       actionSetter.addClickHandler(button);
+        Counter counter = new Counter(label);
+        ActionSetter actionSetter = new ActionSetter(counter);
+        actionSetter.addClickHandler(button);
 
-       GridPane root = new GridPane();
-       root.setAlignment(Pos.CENTER);
+        GridPane root = new GridPane();
+        root.setAlignment(Pos.CENTER);
 
-       root.add(button.actualButton(), 1, 1);
-       root.add(label.actualLabel(), 1, 3);
+        root.add(button.actualButton(), 1, 1);
+        root.add(label.actualLabel(), 1, 3);
 
-       setStyle(button, label, root);
+        setStyle(button, label, root);
 
-       Scene scene = new Scene(root, 300, 300);
-       primaryStage.setScene(scene);
-       primaryStage.show();
+        Scene scene = new Scene(root, 300, 300);
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-public class LabelDouble extends AppLabel {
+public class LabelDouble implements CounterLabel {
 
     private String text;
 

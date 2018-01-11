@@ -1,9 +1,9 @@
 public class Counter {
 
-    private final AppLabel label;
+    private final CounterLabel label;
     private int value;
 
-    public Counter(AppLabel label) {
+    public Counter(CounterLabel label) {
         this.label = label;
     }
 

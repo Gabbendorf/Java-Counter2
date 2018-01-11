@@ -1,6 +1,6 @@
 import javafx.scene.control.Label;
 
-public class AppLabel {
+public class AppLabel implements CounterLabel {
 
     private final Label label;
 
