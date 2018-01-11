@@ -6,6 +6,7 @@ public class AppLabel implements CounterLabel {
 
     public AppLabel() {
         this.label = new Label();
+        this.label.setText("0");
     }
 
     public void setText(String text) {
