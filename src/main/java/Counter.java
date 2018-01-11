@@ -11,8 +11,4 @@ public class Counter {
         value += 1;
         label.setText(Integer.toString(value));
     }
-
-    public int getValue() {
-        return value;
-    }
 }

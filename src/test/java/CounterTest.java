@@ -5,10 +5,11 @@ public class CounterTest {
 
     @Test
     public void incrementsValue() {
-        Counter counter = new Counter(new LabelDouble());
+        LabelDouble labelDouble = new LabelDouble();
+        Counter counter = new Counter(labelDouble);
 
         counter.updateValue();
 
-        assertEquals(1, counter.getValue());
+        assertEquals("1", labelDouble.updatedText());
     }
 }
