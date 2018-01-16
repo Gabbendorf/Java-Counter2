@@ -2,16 +2,16 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
-public class AppButton {
+public class PlusOneButton {
 
     private final Button button;
 
-    public AppButton(Button button) {
+    public PlusOneButton(Button button) {
         this.button = button;
         this.button.setText("+1");
     }
 
-    public AppButton() {
+    public PlusOneButton() {
         this(new Button());
     }
 

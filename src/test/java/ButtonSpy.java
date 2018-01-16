@@ -1,6 +1,6 @@
 import javafx.event.EventHandler;
 
-public class ButtonSpy extends AppButton {
+public class ButtonSpy extends PlusOneButton {
 
     public boolean wasCalled = false;
 

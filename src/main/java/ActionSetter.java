@@ -6,7 +6,7 @@ public class ActionSetter {
         this.counter = counter;
     }
 
-    public void addClickHandler(AppButton button) {
+    public void addClickHandler(PlusOneButton button) {
         button.setOnAction(event -> counter.updateValue());
     }
 }

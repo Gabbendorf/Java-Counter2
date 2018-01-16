@@ -8,7 +8,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        AppButton button = new AppButton();
+        primaryStage.setTitle("Counter");
+        PlusOneButton button = new PlusOneButton();
         AppLabel label = new AppLabel();
         Counter counter = new Counter(label);
 
@@ -29,7 +30,7 @@ public class Main extends Application {
         launch(args);
     }
 
-    private void setStyle(AppButton button, AppLabel label, GridPane root) {
+    private void setStyle(PlusOneButton button, AppLabel label, GridPane root) {
         button.actualButton().setStyle("-fx-color: yellow; -fx-padding: 10 15 10 15; -fx-font-size: 20");
         label.actualLabel().setStyle("-fx-font-size: 50; -fx-text-alignment: center; -fx-text-fill: red;");
         root.setStyle("-fx-background-color: white; -fx-border-width: 10; -fx-border-color: pink;");
