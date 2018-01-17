@@ -2,7 +2,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 
-public class PlusOneButton {
+public class PlusOneButton implements ButtonWrapper {
 
     private final Button button;
 

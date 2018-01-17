@@ -10,4 +10,9 @@ public class LabelDouble implements CounterLabel {
     public String updatedText() {
         return text;
     }
+
+    @Override
+    public String getText() {
+        return text;
+    }
 }

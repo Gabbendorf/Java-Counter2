@@ -16,4 +16,9 @@ public class AppLabel implements CounterLabel {
     public Label actualLabel() {
         return label;
     }
+
+    @Override
+    public String getText() {
+        return label.getText();
+    }
 }
